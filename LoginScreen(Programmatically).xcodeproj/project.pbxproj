@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		8CD981D12542045E004F51B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD981D02542045E004F51B4 /* AppDelegate.swift */; };
 		8CD981D32542045E004F51B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD981D22542045E004F51B4 /* SceneDelegate.swift */; };
-		8CD981D52542045E004F51B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD981D42542045E004F51B4 /* ViewController.swift */; };
-		8CD981D82542045E004F51B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD981D62542045E004F51B4 /* Main.storyboard */; };
+		8CD981D52542045E004F51B4 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD981D42542045E004F51B4 /* LoginController.swift */; };
 		8CD981DA25420460004F51B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD981D925420460004F51B4 /* Assets.xcassets */; };
 		8CD981DD25420460004F51B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD981DB25420460004F51B4 /* LaunchScreen.storyboard */; };
 		8CD981E825420460004F51B4 /* LoginScreen_Programmatically_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD981E725420460004F51B4 /* LoginScreen_Programmatically_Tests.swift */; };
 		8CD981F325420460004F51B4 /* LoginScreen_Programmatically_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD981F225420460004F51B4 /* LoginScreen_Programmatically_UITests.swift */; };
+		8CD9820125423778004F51B4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD9820025423778004F51B4 /* LoginView.swift */; };
+		8CD98203254238CE004F51B4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD98202254238CE004F51B4 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,7 @@
 		8CD981CD2542045E004F51B4 /* LoginScreen(Programmatically).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoginScreen(Programmatically).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD981D02542045E004F51B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CD981D22542045E004F51B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8CD981D42542045E004F51B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8CD981D72542045E004F51B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CD981D42542045E004F51B4 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		8CD981D925420460004F51B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CD981DC25420460004F51B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CD981DE25420460004F51B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		8CD981EE25420460004F51B4 /* LoginScreen(Programmatically)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoginScreen(Programmatically)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD981F225420460004F51B4 /* LoginScreen_Programmatically_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen_Programmatically_UITests.swift; sourceTree = "<group>"; };
 		8CD981F425420460004F51B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CD9820025423778004F51B4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8CD98202254238CE004F51B4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +102,12 @@
 			isa = PBXGroup;
 			children = (
 				8CD981D02542045E004F51B4 /* AppDelegate.swift */,
-				8CD981D22542045E004F51B4 /* SceneDelegate.swift */,
-				8CD981D42542045E004F51B4 /* ViewController.swift */,
-				8CD981D62542045E004F51B4 /* Main.storyboard */,
+				8CD98202254238CE004F51B4 /* Extensions.swift */,
+				8CD981D42542045E004F51B4 /* LoginController.swift */,
+				8CD9820025423778004F51B4 /* LoginView.swift */,
 				8CD981D925420460004F51B4 /* Assets.xcassets */,
 				8CD981DB25420460004F51B4 /* LaunchScreen.storyboard */,
+				8CD981D22542045E004F51B4 /* SceneDelegate.swift */,
 				8CD981DE25420460004F51B4 /* Info.plist */,
 			);
 			path = "LoginScreen(Programmatically)";
@@ -234,7 +237,6 @@
 			files = (
 				8CD981DD25420460004F51B4 /* LaunchScreen.storyboard in Resources */,
 				8CD981DA25420460004F51B4 /* Assets.xcassets in Resources */,
-				8CD981D82542045E004F51B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CD981D52542045E004F51B4 /* ViewController.swift in Sources */,
+				8CD98203254238CE004F51B4 /* Extensions.swift in Sources */,
+				8CD981D52542045E004F51B4 /* LoginController.swift in Sources */,
 				8CD981D12542045E004F51B4 /* AppDelegate.swift in Sources */,
+				8CD9820125423778004F51B4 /* LoginView.swift in Sources */,
 				8CD981D32542045E004F51B4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8CD981D62542045E004F51B4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8CD981D72542045E004F51B4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8CD981DB25420460004F51B4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
