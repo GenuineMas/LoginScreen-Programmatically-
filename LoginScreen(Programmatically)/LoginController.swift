@@ -15,15 +15,15 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
-       // setupView()
+        setupView()
     }
     
     func setupView() {
         let mainView = LoginView(frame: self.view.frame)
         self.loginView = mainView
         self.view.addSubview(loginView)
-    //    loginView.setAnchor(width: <#T##CGFloat#>, height: <#T##CGFloat#>)
-        //(top: view.topAnchor, paddingTop: 0, bottom: view.bottomAnchor, paddingBottom: 0, left: view.leftAnchor, paddingLeft: 0, right: view.rightAnchor, paddingRight: 0)
+        loginView.setAnchor(top: view.topAnchor, paddingTop: 0, bottom: view.bottomAnchor, paddingBottom: 0, left: view.leftAnchor, paddingLeft: 0, right: view.rightAnchor, paddingRight: 0, width: 50, height: 50)
+       
         
     }
 

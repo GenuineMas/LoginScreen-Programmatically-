@@ -11,12 +11,11 @@ import UIKit
 extension UIView {
     func setAnchor(width: CGFloat, height: CGFloat) {
         self.setAnchor(top: nil, paddingTop: 0, bottom: nil, paddingBottom: 0, left: nil, paddingLeft: 0, right: nil, paddingRight: 0, width: width, height: height)
-        
-        
     }
     
     func setAnchor(top: NSLayoutYAxisAnchor?, paddingTop: CGFloat, bottom: NSLayoutYAxisAnchor?, paddingBottom: CGFloat, left: NSLayoutXAxisAnchor?, paddingLeft: CGFloat, right: NSLayoutXAxisAnchor?, paddingRight: CGFloat, width: CGFloat, height: CGFloat) {
-        translatesAutoresizingMaskIntoConstraints = false
+        
+        self.translatesAutoresizingMaskIntoConstraints = false
         if let top = top {
             topAnchor.constraint(equalTo: top, constant: paddingTop).isActive = true
         }

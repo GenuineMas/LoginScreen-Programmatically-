@@ -15,13 +15,16 @@ class LoginView: UIView {
         super.init(frame:frame)
         setup()
     }
+    func setup() {
+        backgroundColor = .darkGray
+      }
     
-    required init?(coder: NSCoder) {
+    //let backGroundImageView:UIImageView
+    
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setup() {
-        backgroundColor = .red
-    }
+  
     
 }
