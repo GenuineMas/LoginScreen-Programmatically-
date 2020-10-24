@@ -37,6 +37,8 @@ class LoginController: UIViewController {
     
     func setupView() {
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(keyboardWillHide))
+        self.view.addGestureRecognizer(tap)
         self.view.addSubview(scrollView)
         
         let mainView = LoginView(frame: self.view.frame)
@@ -47,7 +49,6 @@ class LoginController: UIViewController {
         mainView.setAnchor(top: view.topAnchor, paddingTop: 0, bottom: view.bottomAnchor, paddingBottom: 0, left: view.leftAnchor, paddingLeft: 0, right: view.rightAnchor, paddingRight: 0, width: 50, height: 50)
        
     }
-    
     
     @objc func keyboardWillShow(notification: NSNotification ){
         guard let userInfo = notification.userInfo else {return}
@@ -60,9 +61,9 @@ class LoginController: UIViewController {
     
     @objc func keyboardWillHide(notification: NSNotification ){
         if self.view.frame.origin.y != 0 {
-                self.view.frame.origin.y = 0
-            }
+            self.view.frame.origin.y = 0
+            self.view.endEditing(true)
+        }
     }
-
 }
 
